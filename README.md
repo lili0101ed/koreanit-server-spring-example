@@ -1,6 +1,6 @@
 # koreanit-server-spring-example
 
-Koreanit 예제용 Spring Boot 백엔드 API 서버입니다.
+Spring Boot 백엔드 API 서버입니다.
 
 - GitHub: https://github.com/lili0101ed/koreanit-server-spring-example
 - Stack: Spring Boot 3.5, Java 17, MySQL, Redis(Session), Spring Security
@@ -70,9 +70,3 @@ cd ~/projects/koreanit-server/spring
 
 - 성공: `ApiResponse.ok(data)`
 - 실패: `GlobalExceptionHandler`에서 공통 에러 포맷으로 반환
-
-## 참고
-
-현재 GitHub 원격 저장소의 README는 최소 내용만 포함되어 있어,
-이 문서는 저장소 정보 + 실제 코드 구조를 기반으로 정리했습니다.
-원하시면 GitHub 페이지(위키/프로젝트/노션 등) 원문 링크 기준으로 문구를 1:1 맞춰서 다시 수정해드릴게요.
