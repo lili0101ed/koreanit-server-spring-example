@@ -1,0 +1,13 @@
+@baseUrl = http://localhost:8080
+
+### users (limit ?)
+GET {{baseUrl}}/hello/users?limit=10
+
+### user by id
+GET {{baseUrl}}/hello/users/10
+
+### posts (limit ?)
+GET {{baseUrl}}/hello/posts?limit=10
+
+### post by id
+GET {{baseUrl}}/hello/posts/10

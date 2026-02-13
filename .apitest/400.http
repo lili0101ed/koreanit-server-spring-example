@@ -1,0 +1,31 @@
+@baseUrl = http://localhost:8080
+
+### username 누락 (400)
+POST {{baseUrl}}/api/users
+Content-Type: application/json
+
+{
+  "password": "1234",
+  "nickname": "테스트",
+  "email": "test@test.com"
+}
+
+
+### username 길이 오류 (400)
+POST {{baseUrl}}/api/users
+Content-Type: application/json
+
+{
+  "username": "ab",
+  "password": "1234",
+  "nickname": "테스트",
+  "email": "test@test.com"
+}
+
+### password 너무 짧음 (400)
+PUT {{baseUrl}}/api/users/10060/password
+Content-Type: application/json
+
+{
+  "password": "12"
+}
